@@ -1,0 +1,289 @@
+body,html{
+  /* font-family: "Montserrat", sans-serif !important; */
+  padding: 0px;
+  margin: 0px;
+  background-color: #444;
+  
+}
+/* COLOR */
+.txt-gray,input::placeholder{
+  color:#878787 !important; 
+}
+.txt-black{
+  color: #101010 !important;
+}
+.txt-yellow{
+  color: #FE8C00 !important;
+}
+.p-component:hover,.p-component:active,.p-component:focus,.p-checkbox:not(.p-disabled):has(.p-checkbox-input:hover) .p-checkbox-box{
+  border-color: #FE8C00 !important;
+  box-shadow: none;
+}
+
+.p-button-primary,.p-checkbox:not(.p-disabled):has(.p-checkbox-input:hover).p-highlight .p-checkbox-box,.p-slider .p-slider-range{
+  background-color: #FE8C00 !important;
+  border-color: #FE8C00;
+
+}
+.p-slider:not(.p-disabled) .p-slider-handle:hover{
+  background-color: #FE8C00;
+  border: 1px solid #878787;
+}
+.p-slider .p-slider-handle{
+  border-color: #FE8C00;
+}
+/* FONT STYLE */
+.fs-32{
+  font-size: 32px;
+}
+.fs-20{
+  font-size:18px;
+}
+.fs-14{
+  font-size: 14px;
+}
+.line-height-40{
+  line-height: 40px;
+}
+.line-height-20{
+  line-height: 20px;
+}
+/* COMMON CSS */
+.mobile_view{
+  min-width: 350px;
+  width: 350px;
+  height: 100vh;
+  overflow-x: hidden;
+   position: relative;
+   z-index: 9999;
+   margin: 0px auto;
+   background-color: #fff;
+}
+
+
+.grid{
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+
+.slick-arrow{
+  top: inherit !important;
+  bottom:25px;
+  display: none !important;
+}
+.no-btn{
+  background-color: transparent;
+  border:none;
+  color: #fff;
+
+}
+
+.p-password-panel{
+  display: none !important;
+}
+.headding_box{
+  margin-bottom: 32px;
+}
+.p-button{
+  width: 100%;
+  padding:15px;
+  border-radius: 50px;
+  
+}
+.p-button-label{
+  font-weight: 400;
+}
+.p-inputtext{
+  width: 100%;
+  padding: 16px;
+  font-size: 14px;
+}
+.p-password{
+  width: 100%;
+  display: block;
+}
+
+.linebox::before,.linebox::after{
+  content: '';
+  width: 30%;
+  min-width: 80px;
+  height: 0.5px;
+  background-color: #878787;
+  display: block;
+  position: absolute;
+  top:8px
+
+}
+.linebox::after{
+  right: 0px;
+
+}
+.sucessdialogBox{
+  background-color: #fff;
+  left: 0px;
+  right: 0px;
+  bottom: 0;
+  border-radius: 50px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding: 10px 0px 5px 0px;
+ 
+ 
+}
+.sucessdialogBox.hide .context_box{
+  display: none;
+}
+
+.sucessdialogBox .context_box{
+  display: block;
+}
+
+.clock {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
+  font-size: 24px;
+  color: #444;
+  text-align: center;
+}
+
+.clock::after {
+  background: #aaa;
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #fff;
+}
+
+.hour-hand,
+.minute-hand,
+.second-hand {
+  position: absolute;
+
+  transform-origin: bottom;
+  transform: rotate(90deg);
+}
+.hour-hand{
+  top: 24%;
+  left: 51%;
+}
+.minute-hand{
+  top: 20%;
+  left: 49%;
+}
+.second-hand{
+  top: 16% !important;
+  left: 50%;
+}
+.hour-hand {
+  width: 4px;
+  height: 50px;
+  background: #FE8C00;
+  border-radius: 2px;
+  z-index: 3;
+}
+
+.minute-hand {
+  width: 2px;
+  height: 60px;
+  background: #FE8C00;
+  border-radius: 2px;
+  z-index: 2;
+}
+
+.second-hand {
+  width: 1px;
+  height: 70px;
+  background: #FE8C00;
+  border-radius: 2px;
+  z-index: 1;
+}
+
+.center-dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  background: #FE8C00;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  border: 2px solid #FE8C00;
+}
+.clock span {
+  position: absolute;
+  font-size: 14px;
+  font-weight: 400;
+}
+.twelve {
+  top: 10px;
+  left: 46%;
+}
+
+.one {
+  top: 10%;
+  right: 26%;
+}
+
+.eleven {
+  top: 10%;
+  left: 26%;
+}
+
+.two {
+  top: 25%;
+  right: 10%;
+}
+
+.three {
+  right: 10px;
+  top: 46%;
+}
+
+.four {
+  right: 30px;
+  top: 67%;
+}
+
+.five {
+  right: 55px;
+  top: 80%;
+}
+
+.six {
+  bottom: 10px;
+  left: 48%;
+}
+
+.seven {
+  left: 56px;
+  top: 82%;
+}
+
+.eight {
+  left: 30px;
+  top: 67%;
+}
+
+.nine {
+  left: 10px;
+  top: 46%;
+}
+
+.ten {
+  top: 25%;
+  left: 10%;
+}

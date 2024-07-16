@@ -1,0 +1,62 @@
+.splash_box{
+  background-color: #FE8C00;
+  left: 15px;
+  right: 15px;
+  bottom: 5%;
+  border-radius: 50px;
+  padding: 20px 0px 5px 0px;
+  color: #fff;
+}
+.splash_box_container{
+   background-size: cover;
+   width: 100%;
+   height: 100vh;
+   padding: 0px;
+   left: 0px;
+   right: 0px;
+   top:0px;
+   
+}
+.slider__dots {
+    display: flex;
+    justify-content: center;
+
+  }
+  .slider__dot, .slider__indicator {
+    display: block;
+    margin: 0 0.2em;
+    width: 26px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 100px;
+  }
+  .slider__indicator {
+    background: white;
+    width: auto;
+  }
+  .slider__indicator--left {
+    transition: left 0.3s cubic-bezier(0.51, 0.92, 0.24, 1.15), right 0.3s 0.1s cubic-bezier(0.51, 0.92, 0.24, 1.15);
+  }
+  .slider__indicator--right {
+    transition: left 0.3s 0.1s cubic-bezier(0.51, 0.92, 0.24, 1.15), right 0.3s cubic-bezier(0.51, 0.92, 0.24, 1.15);
+  }
+  .slider[data-pos="0"] .slider__indicator {
+    left: 0em;
+    right: 6em;
+  }
+  .slider[data-pos="1"] .slider__indicator {
+    left: 2em;
+    right: 4em;
+  }
+  .slider[data-pos="2"] .slider__indicator {
+    left: 4em;
+    right: 2em;
+  }
+  .slider[data-pos="3"] .slider__indicator {
+    left: 6em;
+    right: 0em;
+  }
+
+  .slider__dot.active{
+    background-color: #fff;
+  }
