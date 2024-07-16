@@ -55,7 +55,7 @@ body,html{
   height: 100vh;
   overflow-x: hidden;
    position: relative;
-   z-index: 9999;
+
    margin: 0px auto;
    background-color: #fff;
 }

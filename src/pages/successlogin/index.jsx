@@ -10,6 +10,7 @@ export default function SuccessLogin() {
   const [active, setActive] = useState({
     active: "fadeindown",
   });
+  
   const handlerHidebox = () => {
     if (active.active == "fadeindown") {
       setActive({
@@ -55,7 +56,7 @@ export default function SuccessLogin() {
             </div>
             <div className="col-12">
               <Link
-                to="/trackscreen"
+                to={`/trackscreen/1000/${new Date().getTime()}/1`}
                 className="fs-14 p-button p-component p-button-primary no-underline text-center block"
               >
                 Go to Tracking Screen

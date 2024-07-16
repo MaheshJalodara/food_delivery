@@ -18,10 +18,10 @@ function App() {
             <Route path="login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/loginsucess" element={<SucessLogin />} />
-            <Route path="/trackscreen" element={<TrackScreen />} />
+            <Route path="/trackscreen/:defaultintervalCount?/:defaulttime?/:defaultvalue?" element={<TrackScreen />} />
           </Routes>
         </BrowserRouter>
-      </div>
+      </div> 
     </>
   );
 }
